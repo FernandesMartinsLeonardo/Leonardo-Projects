@@ -1,7 +1,7 @@
-## Projeto Rappi4
+## Projeto 4food
 
 
-Conheça o Rappi4: https://brown-decision.surge.sh/
+Conheça a landing page do 4food: https://brown-decision.surge.sh/
 
 
 
