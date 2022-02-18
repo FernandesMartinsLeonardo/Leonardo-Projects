@@ -11,7 +11,7 @@ const MainContainer = styled.div`
 `;
 
 const Header = styled.header`
-  background-color: lightsalmon;
+  background-color: salmon;
   margin-bottom: 12px;
   border-bottom: 1px solid black;
 `;
