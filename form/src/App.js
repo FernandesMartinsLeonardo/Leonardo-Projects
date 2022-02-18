@@ -7,11 +7,21 @@ import styled from "styled-components";
 
 const Titulo = styled.h1 `
   text-align: center;
-  background-color: black;
-  color: white;
+  border-bottom: 4px solid black;
 `;
 const Perguntas = styled.div `
   text-align: center;
+
+  button{
+    border-radius: 12px;
+    border: none;
+
+
+    :hover{
+      background-color: black;
+      color: white;
+    }
+  }
 `;
 
 export default class App extends React.Component {
@@ -41,7 +51,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
+      <div>
         <Titulo>Formulário</Titulo>
         <Perguntas>
           {this.renderizaEtapa()}
