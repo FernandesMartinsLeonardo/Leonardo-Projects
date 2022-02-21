@@ -1,0 +1,380 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&display=swap"); */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Avenir Book Oblique";
+  box-sizing: border-box;
+}
+
+/** HEADER **/
+header {
+  border-bottom: 1px solid #03989e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+  margin-bottom: 2em;
+
+
+}
+.logo {
+  width: 60%;
+}
+nav {
+  display: flex;
+  color: #03989e;
+  font-family: "Avenir Next Bold Italic";
+  align-items: center;
+}
+nav p {
+  margin: 0 5px;
+  color: #03989e;
+}
+nav a:hover {
+  font-size: 1.3rem;
+}
+nav a:visited {
+  color: #03989e;
+}
+main {
+  display: grid;
+  grid-template-columns: 9vw 1fr 1fr 1fr 1fr 9vw;
+  justify-content: center;
+  align-items: center;
+  row-gap: 8vh;
+}
+
+/** DIV DEV FRONT **/
+#front {
+  width: 80vw;
+  margin: auto;
+  grid-column: 2/5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#front img {
+  border-radius: 16px;
+  max-width: 79vw;
+}
+.titulo-front {
+  position: absolute;
+}
+#front h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 6rem;
+  font-family: "Avenir Next Bold Italic";
+  -webkit-text-stroke: 1px #03989e;
+}
+#front h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 4rem;
+  font-family: "Avenir Next Bold Italic";
+  -webkit-text-stroke: 1px #03989e;
+}
+
+/** SECTION EDUCAÇÃO **/
+#cursos{
+  display: block;
+  margin: 2em 6em;
+  color: #03989e;
+  font-size: 1.3rem;
+
+}
+#cursos h1{
+  font-size: 2.5em;
+  color: #03989e;
+  font-family: "Avenir Next Bold Italic";
+}
+#labenu{
+  max-width: 8vw;
+}
+#pucrs{
+  margin-top: 1em;
+  max-width: 12vw;
+}
+
+/** SECTION PROJETOS **/
+#projetos {
+  grid-column: 2/6;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+}
+#projetos h1{
+  font-size: 3em;
+  color: #03989e;
+  font-family: "Avenir Next Bold Italic";
+}
+.categorias {
+  grid-column: 2/6;
+  height: 24vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.categorias img{
+  height: 25vh;
+  width: 37vh;
+  border-radius: 8px;
+  margin-top: 4em;
+}
+
+#projetos h5{
+  text-align: center;
+  font-size: 1.3em;
+  color: #03989e;
+  font-family: "Avenir Next Bold Italic";
+}
+#rappi4 {
+  grid-column: 1/2;
+}
+#astro-match {
+  grid-column: 2/3;
+}
+#labetarefas {
+  grid-column: 3/4;
+}
+#labeinsta {
+  grid-column: 4/5;
+}
+#labefood {
+  grid-column: 1/2;
+  margin-top: 3em;
+}
+#labeform {
+  grid-column: 2/3;
+  margin-top: 3em;
+}
+#labeninja {
+  grid-column: 3/4;
+  margin-top: 3em;
+}
+#labewhats {
+  grid-column: 4/5;
+  margin-top: 3em;
+}
+
+/** SECTION Quem sou eu **/
+#quem-sou {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  color: #03989e;
+  grid-column: 2/6;
+  margin-top: 4em;
+}
+#quem-sou div{
+  grid-column: 2/3;
+}
+#quem-sou h1 {
+  font-size: 3em;
+  margin-bottom: 1em;
+  font-family: "Avenir Next Bold Italic";
+}
+#quem-sou p {
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+#quem-sou img {
+  max-width: 36vw;
+  margin-right: 3em;
+  border-radius: 16px;
+}
+
+/** SECTION FAQ **/
+
+.perguntas-frequentes,
+input {
+  display: none;
+
+}
+
+
+input + label:before {
+  background-image: url("https://icons-for-free.com/iconfiles/png/512/arrow+essential+right+ui+icon-1320166506597285947.png");
+  background-size: 20px 20px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  content: "";
+  margin-right: 1vw;
+}
+
+
+input:checked + label:before {
+  background-image: url("https://icons-for-free.com/iconfiles/png/512/arrow+down+essential+ui+icon-1320166506450388543.png");
+  background-size: 20px 20px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  content: "";
+}
+
+input:checked ~ .perguntas-frequentes {
+  display: block;
+}
+
+
+
+li{
+  list-style: none;
+  margin: 2vh 0;
+  font-size: 1.3rem;
+  color: #03989e;
+}
+
+label{
+  font-size: 1.7rem;
+  color: #03989e;
+}
+
+#faq{
+  margin: 4vh 9vw
+}
+
+#faq h3{
+  font-size: 3em;
+  color: #03989e;
+  font-family: "Avenir Next Bold Italic";
+}
+
+#faq p{
+  margin: 2vh 0
+}
+
+/** FOOTER **/
+footer {
+  border-top: 1px solid #03989e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Avenir Book Oblique";
+  color: #03989e;
+}
+.icone {
+  width: 50px;
+  height: 50px;
+}
+.redes-sociais {
+  margin: 0 8em;
+}
+a {
+  text-decoration: none;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-device-width: 900px){
+
+  nav a{
+    display: none;
+  }
+
+  .botoes-login{
+    display: flex;
+  }
+
+  .titulo p{
+    display: none;
+  }
+
+  #educacao h3, #educacao h4{
+    font-size: 1.4rem;
+
+  }
+
+  .titulo-educacao{
+    right: 28%;
+  }
+
+  #projetos{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .categorias{
+    height: fit-content;
+    margin: 2vh 0
+  }
+
+
+
+  .categorias img{
+    display: none;
+  }
+
+  #quem-sou{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #quem-sou img{
+    width: 30vh;
+    max-width: fit-content;
+    margin-right: 0;
+  }
+
+  #quem-sou h1{
+    font-size: 2rem;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+
+  #faq h3{
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  label{
+    font-size: 1.3rem;
+  }
+
+  input + label:before {
+    background-image: url("https://icons-for-free.com/iconfiles/png/512/arrow+essential+right+ui+icon-1320166506597285947.png");
+    background-size: 10px 10px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    content: "";
+    margin-right: 1vw;
+  }
+
+
+  input:checked + label:before {
+    background-image: url("https://icons-for-free.com/iconfiles/png/512/arrow+down+essential+ui+icon-1320166506450388543.png");
+    background-size: 10px 10px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    content: "";
+  }
+
+  .icone{
+    width: 30px;
+    height: 30px;
+
+  }
+
+  .redes-sociais{
+    display: flex;
+    margin: 0 2em
+  }
+
+
+}
