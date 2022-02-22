@@ -1,7 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import "./styles.css";
+import Labetarefas from "./imagens/Labetarefas.png"
 
+const AppContainer = styled.div`
+  background-color: #ededed;
+`;
+const Logo = styled.img`
+  max-width: 12vw;
+`;
 const TarefaList = styled.ul`
   padding: 0;
   width: 200px;
@@ -114,8 +121,8 @@ class App extends React.Component {
     });
 
     return (
-      <div className="App">
-        <h1>Lista de tarefas</h1>
+      <AppContainer className="App">
+        <Logo src={Labetarefas}/>
         <InputsContainer>
           <input value={this.state.inputValue} onChange={this.onChangeInput} />
           <button onClick={this.criaTarefa}>Adicionar</button>
@@ -143,7 +150,7 @@ class App extends React.Component {
             );
           })}
         </TarefaList>
-      </div>
+      </AppContainer>
     );
   }
 }
