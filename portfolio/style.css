@@ -81,27 +81,6 @@ main {
   -webkit-text-stroke: 1px #03989e;
 }
 
-/** SECTION EDUCAÇÃO **/
-#cursos{
-  display: block;
-  margin: 2em 6em;
-  color: #03989e;
-  font-size: 1.3rem;
-
-}
-#cursos h1{
-  font-size: 2.5em;
-  color: #03989e;
-  font-family: "Avenir Next Bold Italic";
-}
-#labenu{
-  max-width: 8vw;
-}
-#pucrs{
-  margin-top: 1em;
-  max-width: 12vw;
-}
-
 /** SECTION PROJETOS **/
 #projetos {
   grid-column: 2/6;
@@ -160,7 +139,7 @@ main {
   grid-column: 3/4;
   margin-top: 3em;
 }
-#labewhats {
+#pokedex {
   grid-column: 4/5;
   margin-top: 3em;
 }
@@ -191,6 +170,28 @@ main {
   max-width: 36vw;
   margin-right: 3em;
   border-radius: 16px;
+}
+
+/** SECTION EDUCAÇÃO **/
+#cursos{
+  display: block;
+  margin: 2em 6em;
+  color: #03989e;
+  font-size: 1.3rem;
+
+}
+#cursos h1{
+  font-size: 2.5em;
+  color: #03989e;
+  font-family: "Avenir Next Bold Italic";
+}
+#labenu{
+  margin: 1em;
+  max-width: 8vw;
+}
+#pucrs{
+  margin: 1em;
+  max-width: 12vw;
 }
 
 /** SECTION FAQ **/
