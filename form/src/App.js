@@ -4,13 +4,20 @@ import Etapa2 from "./components/Etapa2";
 import Etapa3 from "./components/Etapa3";
 import Final from "./components/Final";
 import styled from "styled-components";
+import Labeform from "./imagens/Labeform.png"
 
-const Titulo = styled.h1 `
+const AppContainer = styled.div `
   text-align: center;
   border-bottom: 1px solid black;
+  background-color: black;
+`;
+const Logo = styled.img `
+  max-width: 20vw;
 `;
 const Perguntas = styled.div `
   text-align: center;
+  color: white;
+  border-top: 1px solid white;
 `;
 
 export default class App extends React.Component {
@@ -40,8 +47,8 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <Titulo>Formulário</Titulo>
+      <AppContainer>
+        <Logo src={Labeform}/>
         <Perguntas>
           {this.renderizaEtapa()}
           <br />
@@ -49,7 +56,7 @@ export default class App extends React.Component {
             <button onClick={this.proximaEtapa}>Próxima etapa</button>
           )}
         </Perguntas>
-      </div>
+      </AppContainer>
     );
   }
 }
