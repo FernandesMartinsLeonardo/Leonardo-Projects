@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Post from "./components/Post/Post";
 import Share from "./components/Share/Share";
+import Labeinsta from "./img/Labeinsta.png"
 
 const MainContainer = styled.div`
   display: flex;
@@ -11,11 +12,15 @@ const MainContainer = styled.div`
 `;
 
 const Header = styled.header`
-  background-color: salmon;
+  background-color: #ffa384;
   margin-bottom: 12px;
   border-bottom: 1px solid black;
+  text-align: center;
 `;
 
+const Logo = styled.img`
+  max-width: 12vw;
+`;
 const Feed = styled.div`
   background-color: white;
 `;
@@ -113,6 +118,7 @@ class App extends React.Component {
     return (
       <div>
         <Header>
+          <Logo src={Labeinsta}/>
           <AdicionarPost>
             <input
               value={this.state.inputNomeUsuario}
