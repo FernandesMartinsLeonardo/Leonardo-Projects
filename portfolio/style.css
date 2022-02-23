@@ -280,6 +280,8 @@ a {
 
 @media screen and (max-device-width: 900px){
 
+  /** SECTION HEADER **/
+
   .logo {
   width: 70%;
   display: flex;
@@ -295,15 +297,16 @@ a {
     justify-content: center;
     align-items: center;
     margin: 1em 2em;
+    padding: 1em;
   }
 
-  nav a{
-    /* display: none; */
-  }
-
+  /** SECTION FRONT **/
 
   #front h3, #front h4{
     font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
   }
 
@@ -313,7 +316,12 @@ a {
 
   #front img{
     max-width: 64vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+
+  /** SECTION PROJETOS **/
 
   #projetos{
     display: flex;
@@ -331,6 +339,8 @@ a {
     max-width: 60vw;
     margin-bottom: 1em;
   }
+
+  /** SECTION Quem sou eu **/
 
   #quem-sou{
     display: flex;
@@ -387,6 +397,8 @@ a {
   max-width: 28vw;
   }
 
+  /** SECTION FAQ **/
+
   #faq h3{
     font-size: 2rem;
     text-align: center;
@@ -418,13 +430,14 @@ a {
     display: inline-block;
     width: 10px;
     height: 10px;
-    content: "";
   }
 
   .icone{
     width: 30px;
     height: 30px;
   }
+
+  /** SECTION FOOTER **/
 
   .redes-sociais{
     display: flex;
