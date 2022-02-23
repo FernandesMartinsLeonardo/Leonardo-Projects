@@ -307,12 +307,12 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 4em;
-
+    font-family:"Avenir Next Bold Italic";
+    -webkit-text-stroke: 1px white;
   }
 
   .titulo-front{
-    right: 28%;
+    right: 22%;
   }
 
   #front img{
@@ -337,7 +337,7 @@ a {
   }
 
   .categorias img{
-    max-width: 60vw;
+    max-width: 72vw;
     margin-bottom: 1em;
   }
 
@@ -366,23 +366,23 @@ a {
   #quem-sou p{
     margin-top: 1vh;
     margin-bottom: 1vh;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 1.6em;
+    /* margin: 0 1.6em; */
   }
 
   /** SECTION EDUCAÇÃO **/
 
   #cursos h1{
-  text-align: center;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
   #cursos p{
-  margin-top: 1vh;
+    margin-top: 1vh;
     margin-bottom: 1vh;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -415,13 +415,12 @@ a {
     display: inline-block;
     width: 10px;
     height: 10px;
-    text-align: center;
     margin-left: 0.4em;
   }
 
   .perguntas-frequentes{
-    text-align: center;
-    margin: 0 0.4em;
+    /* text-align: center; */
+    /* margin: 0 0.4em; */
   }
 
 
