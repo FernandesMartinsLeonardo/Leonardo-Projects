@@ -280,42 +280,56 @@ a {
 
 @media screen and (max-device-width: 900px){
 
-  nav a{
-    display: none;
-  }
+  .logo {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3em;
+}
 
-  .botoes-login{
+  #header{
     display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 2em;
   }
 
-  .titulo p{
-    display: none;
+  nav a{
+    /* display: none; */
   }
 
-  #educacao h3, #educacao h4{
-    font-size: 1.4rem;
+
+  #front h3, #front h4{
+    font-size: 2rem;
 
   }
 
-  .titulo-educacao{
+  .titulo-front{
     right: 28%;
+  }
+
+  #front img{
+    max-width: 64vw;
   }
 
   #projetos{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
   }
 
   .categorias{
-    height: fit-content;
-    margin: 2vh 0
+    margin: 3em
   }
 
-
-
   .categorias img{
-    display: none;
+    max-width: 60vw;
+    margin-bottom: 1em;
   }
 
   #quem-sou{
@@ -335,6 +349,42 @@ a {
     font-size: 2rem;
     margin-top: 1vh;
     margin-bottom: 1vh;
+    text-align: center;
+  }
+
+  #quem-sou p{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1.6em;
+  }
+
+  /** SECTION EDUCAÇÃO **/
+
+  #cursos h1{
+  text-align: center;
+  }
+
+  #cursos p{
+  margin-top: 1vh;
+    margin-bottom: 1vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #labenu{
+  margin: 1em;
+  max-width: 16vw;
+  }
+
+  #pucrs{
+  margin: 1em;
+  max-width: 28vw;
   }
 
   #faq h3{
@@ -352,8 +402,13 @@ a {
     display: inline-block;
     width: 10px;
     height: 10px;
-    content: "";
-    margin-right: 1vw;
+    text-align: center;
+    margin-left: 1.4em;
+  }
+
+  .perguntas-frequentes{
+    text-align: center;
+    margin: 0 1em;
   }
 
 
@@ -369,7 +424,6 @@ a {
   .icone{
     width: 30px;
     height: 30px;
-
   }
 
   .redes-sociais{
@@ -377,5 +431,8 @@ a {
     margin: 0 2em
   }
 
+  .onde-estamos{
+    display: none;
+  }
 
 }
