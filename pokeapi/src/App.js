@@ -7,7 +7,7 @@ import Seta from "./imagens/Seta.png"
 
 const ContainerPokemons = styled.div`
   border: 1px solid black;
-  width: 500px;
+  width: 460px;
   margin-left: 35%;
   background-color: red;
   border-radius: 12px;
@@ -21,7 +21,7 @@ const Tittle = styled.div`
 `;
 
 const Logo = styled.img`
-  max-width: 20vw;
+  max-width: 12vw;
 `;
 
 const ContainerTela = styled.div`
@@ -41,6 +41,7 @@ const CardPokemon = styled.div`
   background-color: gray;
   width: 32vw;
   margin-top: 1em;
+  height: 64vh;
 
   select {
     font-size: 20px;
@@ -48,7 +49,7 @@ const CardPokemon = styled.div`
     background-color: black;
     color: yellow;
     margin: 20px;
-    padding: 8px;
+    padding: 4px;
   }
 
   img {
@@ -60,7 +61,7 @@ const CardPokemon = styled.div`
 const Controles = styled.div`
 
   img{
-    max-width: 8vw;
+    max-width: 6vw;
     padding: 2em;
   }
 `;
