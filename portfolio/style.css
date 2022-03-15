@@ -81,27 +81,6 @@ main {
   -webkit-text-stroke: 1px #03989e;
 }
 
-/** SECTION EDUCAÇÃO **/
-#cursos{
-  display: block;
-  margin: 2em 6em;
-  color: #03989e;
-  font-size: 1.3rem;
-
-}
-#cursos h1{
-  font-size: 2.5em;
-  color: #03989e;
-  font-family: "Avenir Next Bold Italic";
-}
-#labenu{
-  max-width: 8vw;
-}
-#pucrs{
-  margin-top: 1em;
-  max-width: 12vw;
-}
-
 /** SECTION PROJETOS **/
 #projetos {
   grid-column: 2/6;
@@ -160,7 +139,7 @@ main {
   grid-column: 3/4;
   margin-top: 3em;
 }
-#labewhats {
+#pokedex {
   grid-column: 4/5;
   margin-top: 3em;
 }
@@ -191,6 +170,28 @@ main {
   max-width: 36vw;
   margin-right: 3em;
   border-radius: 16px;
+}
+
+/** SECTION EDUCAÇÃO **/
+#cursos{
+  display: block;
+  margin: 2em 6em;
+  color: #03989e;
+  font-size: 1.3rem;
+
+}
+#cursos h1{
+  font-size: 2.5em;
+  color: #03989e;
+  font-family: "Avenir Next Bold Italic";
+}
+#labenu{
+  margin: 1em;
+  max-width: 8vw;
+}
+#pucrs{
+  margin: 1em;
+  max-width: 12vw;
 }
 
 /** SECTION FAQ **/
@@ -279,43 +280,68 @@ a {
 
 @media screen and (max-device-width: 900px){
 
-  nav a{
-    display: none;
-  }
+  /** SECTION HEADER **/
 
-  .botoes-login{
+  .logo {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3em;
+}
+
+  #header{
     display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+    padding: 1em;
   }
 
-  .titulo p{
-    display: none;
+  /** SECTION FRONT **/
+
+  #front h3, #front h4{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:"Avenir Next Bold Italic";
+    -webkit-text-stroke: 1px white;
   }
 
-  #educacao h3, #educacao h4{
-    font-size: 1.4rem;
-
+  .titulo-front{
+    right: 22%;
   }
 
-  .titulo-educacao{
-    right: 28%;
+  #front img{
+    max-width: 72vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+
+  /** SECTION PROJETOS **/
 
   #projetos{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
   }
 
   .categorias{
-    height: fit-content;
-    margin: 2vh 0
+    margin: 3em
   }
-
-
 
   .categorias img{
-    display: none;
+    max-width: 72vw;
+    margin-bottom: 1em;
   }
+
+  /** SECTION Quem sou eu **/
 
   #quem-sou{
     display: flex;
@@ -334,7 +360,45 @@ a {
     font-size: 2rem;
     margin-top: 1vh;
     margin-bottom: 1vh;
+    text-align: center;
   }
+
+  #quem-sou p{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0 1.6em; */
+  }
+
+  /** SECTION EDUCAÇÃO **/
+
+  #cursos h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  #cursos p{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #labenu{
+  margin: 1em;
+  max-width: 16vw;
+  }
+
+  #pucrs{
+  margin: 1em;
+  max-width: 28vw;
+  }
+
+  /** SECTION FAQ **/
 
   #faq h3{
     font-size: 2rem;
@@ -351,8 +415,12 @@ a {
     display: inline-block;
     width: 10px;
     height: 10px;
-    content: "";
-    margin-right: 1vw;
+    margin-left: 0.4em;
+  }
+
+  .perguntas-frequentes{
+    /* text-align: center; */
+    /* margin: 0 0.4em; */
   }
 
 
@@ -362,19 +430,22 @@ a {
     display: inline-block;
     width: 10px;
     height: 10px;
-    content: "";
   }
 
   .icone{
     width: 30px;
     height: 30px;
-
   }
+
+  /** SECTION FOOTER **/
 
   .redes-sociais{
     display: flex;
     margin: 0 2em
   }
 
+  .onde-estamos{
+    display: none;
+  }
 
 }
