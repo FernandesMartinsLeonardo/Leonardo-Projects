@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+  box-sizing: border-box;
+}
+
+header {
+  border-bottom: 1px solid #5c331d;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 2em;
+  margin-bottom: 2em;
+}
+
+.logo-e-texto {
+  
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat";
+  color: #5c331d;
+}
+.logo-e-texto p {
+  font-size: 0.6rem;
+}
+.logo {
+  width: 24%;
+}
+.titulo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+nav {
+  display: flex;
+  color: #5c331d;
+  font-family: "Montserrat";
+  align-items: center;
+}
+nav p {
+  margin: 0 5px;
+  color: #5c331d;
+}
+nav a:hover {
+  font-size: 1.1em;
+}
+nav a:visited {
+  color: #5c331d;
+}
+.login {
+  border: none;
+  padding: 0.5em 2em;
+  font-size: 1.2;
+  font-family: "Montserrat";
+  border-radius: 3px;
+  cursor: pointer;
+}
+#criar-conta {
+  color: #5c331d;
+  background-color: white;
+}
+#entrar {
+  background-color: #5c331d;
+  color: #fff;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 9vw 1fr 1fr 1fr 1fr 9vw;
+  justify-content: center;
+  align-items: center;
+  row-gap: 8vh;
+}
+#promocao {
+  width: 80vw;
+
+  margin: auto;
+  grid-column: 2/5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  flex-direction: column;
+}
+#promocao img {
+  border-radius: 16px;
+  max-width: 82vw;
+}
+.titulo-promocao {
+  position: absolute;
+  right: 31%;
+}
+#promocao h3 {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 6rem;
+  font-family: "Montserrat";
+  -webkit-text-stroke: 1px grey;
+}
+#promocao h4 {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 4rem;
+  font-family: "Montserrat";
+  -webkit-text-stroke: 1px grey;
+}
+
+#produtos {
+  grid-column: 2/6;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* margin: 5vh 8vh 0vh 8vh; */
+  column-gap: 20px;
+  /* height: fit-content; */
+ 
+}
+.categorias {
+  grid-column: 2/6;
+  /* background-color: hotpink; */
+  height: 24vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.categorias img{
+  height: 25vh;
+  width: 37vh;
+  border-radius: 8px;
+}
+
+#produtos h5{
+  text-align: center;
+  font-size: 1.3em;
+  color: #5c331d;
+}
+#alimentos {
+  grid-column: 1/2;
+}
+#bebidas {
+  grid-column: 2/3;
+}
+#util-domesticas {
+  grid-column: 3/4;
+}
+#limpeza {
+  grid-column: 4/5;
+}
+#quem-somos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  color: #5c331d;
+  grid-column: 2/6;
+
+}
+#quem-somos div{
+  grid-column: 2/3;
+}
+#quem-somos h1 {
+  font-size: 4em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+#quem-somos p {
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+#quem-somos img {
+  max-width: 40vw;
+  margin-right: 3em;
+  border-radius: 16px;
+}
+
+/***** SECTION FAQ *****/
+
+.perguntas-frequentes,
+input {
+  display: none;
+
+}
+
+
+input + label:before {
+  background-image: url("https://icons-for-free.com/iconfiles/png/512/arrow+essential+right+ui+icon-1320166506597285947.png");
+  background-size: 20px 20px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  content: "";
+  margin-right: 1vw;
+}
+
+
+input:checked + label:before {
+  background-image: url("https://icons-for-free.com/iconfiles/png/512/arrow+down+essential+ui+icon-1320166506450388543.png");
+  background-size: 20px 20px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  content: "";
+}
+
+input:checked ~ .perguntas-frequentes {
+  display: block;
+}
+
+
+
+li{
+  list-style: none;
+  margin: 2vh 0;
+  font-size: 1.3rem;
+  color: #5c331d;
+}
+
+label{
+  font-size: 1.7rem;
+  color: #5c331d;
+  /* margin-left: 2vw; */
+}
+
+#faq{
+  margin: 4vh 9vw
+  
+}
+
+#faq h3{
+  font-size: 3em;
+  color: #5c331d;
+}
+
+#faq p{
+  margin: 2vh 0
+}
+
+/***** FOOTER *****/
+footer {
+  border-top: 1px solid #5c331d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  color: #5c331d;
+}
+.icone {
+  width: 50px;
+  height: 50px;
+}
+.redes-sociais {
+  margin: 0 4em;
+}
+a {
+  text-decoration: none;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-device-width: 900px){
+
+  nav a{
+    display: none;
+  }
+
+  .botoes-login{
+    display: flex;
+  }
+
+  .titulo p{
+    display: none;
+  }
+
+  #promocao h3, #promocao h4{
+    font-size: 1.4rem;
+    
+  }
+
+  .titulo-promocao{
+    right: 28%;
+  }
+
+  #produtos{
+    display: flex;
+    flex-direction: column;
+          
+  }
+
+  .categorias{
+    height: fit-content;
+    margin: 2vh 0
+  }
+
+ 
+
+  .categorias img{
+    display: none;
+  }
+
+  #quem-somos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #quem-somos img{
+    width: 30vh;
+    max-width: fit-content;
+    margin-right: 0;
+  }
+
+  #quem-somos h1{
+    font-size: 2rem;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+
+  #faq h3{
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  label{
+    font-size: 1.3rem;
+  }
+
+  input + label:before {
+    background-image: url("https://icons-for-free.com/iconfiles/png/512/arrow+essential+right+ui+icon-1320166506597285947.png");
+    background-size: 10px 10px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    content: "";
+    margin-right: 1vw;
+  }
+  
+  
+  input:checked + label:before {
+    background-image: url("https://icons-for-free.com/iconfiles/png/512/arrow+down+essential+ui+icon-1320166506450388543.png");
+    background-size: 10px 10px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    content: "";
+  }
+
+  .icone{
+    width: 30px;
+    height: 30px;
+    
+  }
+
+  .redes-sociais{
+    display: flex;
+    margin: 0 2em
+  }
+
+  .onde-estamos{
+
+  }
+
+}
+
+
