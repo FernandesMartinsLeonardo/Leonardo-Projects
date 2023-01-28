@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Kapra";
+    src: local("Kapra"), url("../fonts/Typoforge\ Studio\ -\ Kapra\ Neue\ Bold.otf") format("OpenType");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Kapra";
+    src: local("Kapra"), url("../fonts/Typoforge\ Studio\ -\ Kapra\ Neue\ SemiBold.otf") format("OpenType");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Kapra";
+    src: local("Kapra"), url("../fonts/Typoforge\ Studio\ -\ Kapra\ Neue\ Regular.otf") format("OpenType");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Kapra";
+    src: local("Kapra"), url("../fonts/Typoforge\ Studio\ -\ Kapra\ Neue\ Medium.otf") format("OpenType");
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Kapra";
+    src: local("Kapra"), url("../fonts/Typoforge\ Studio\ -\ Kapra\ Neue\ Light.otf") format("OpenType");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Swis721";
+    src: local("Swis721"), url("../fonts/Swis721\ BT\ Bold_0.ttf");
+    font-weight: 900;
+}
+@font-face {
+    font-family: "Swis721";
+    src: local("Swis721"), url("../fonts/Swiss\ 721\ BT_0.ttf");
+    font-weight: 300;
+}
+
+:root {
+    --white: #ffffff;
+
+    --blue: #001689;
+    --bege: #f1bc7c;
+    --greenZelo: #96c929;
+    --gray-100: #e9ecef;
+    --gray-300: #b3b3b3;
+    --gray-500: #757983;
+    --textColor: #1d1d1b;
+
+    --black-900: #1a1a1a;
+    --yellow-500: #f18700;
+}
+
+@media (max-width: 1080px) {
+    html {
+        font-size: 93.75%;
+    }
+}
+
+@media (max-width: 720px) {
+    html {
+        font-size: 87.5%;
+    }
+}
+
+body {
+    font-family: "Kapra", sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
